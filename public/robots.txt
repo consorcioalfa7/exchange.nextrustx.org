@@ -1,0 +1,27 @@
+User-agent: *
+Allow: /
+
+# Block AI crawlers that don't respect robots.txt
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+# Allow important files
+Allow: /api/
+Allow: /manifest.json
+Allow: /sw.js
+Allow: /icon-*.png
+
+# Sitemap
+Sitemap: https://nextrustx.org/sitemap.xml
